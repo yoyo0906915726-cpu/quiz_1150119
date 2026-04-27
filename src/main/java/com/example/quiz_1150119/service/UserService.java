@@ -36,7 +36,7 @@ public class UserService {
 		return new BasicRes(ReplyMessage.SUCCESS.getCode(),ReplyMessage.SUCCESS.getMessage());
 	}
 	
-	//管理者登入
+	//管理者登入//
 	public LoginRes login(String email, String phone) {
 		if(!StringUtils.hasText(email)||!StringUtils.hasText(phone)) {
 			return new LoginRes(ReplyMessage.NO_CONTENT.getCode(),//
