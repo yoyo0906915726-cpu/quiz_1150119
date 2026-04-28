@@ -14,4 +14,8 @@ public interface FillinDao extends JpaRepository<Fillin, FillinId>{
 	
 	@Query(value = "select * from fillin where quiz_id = ?", nativeQuery = true)
 	public List<Fillin> getByQuizId(int quizId);
+	
+	/* 取得問卷的填寫人數 */
+	@Query(value = "select count(distinct f.email) from fillin f where f.quiz_id = ?", nativeQuery = true)
+	public int countDistinctEmailByQuizId(int quizId);
 }

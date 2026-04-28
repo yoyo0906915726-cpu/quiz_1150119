@@ -31,7 +31,7 @@ public class QuizController {
 	/* @Valid: 是為了讓 CreateQuizReq 中的屬性限制生效 */
 	/* 新增問卷 */
 	@PostMapping("/create")
-	public BasicRes create(@Valid @RequestBody CreateQuizReq req) {
+	public BasicRes create(@Valid @RequestBody CreateQuizReq req) throws Exception {
 		return quizService.create(req);
 	}
 	

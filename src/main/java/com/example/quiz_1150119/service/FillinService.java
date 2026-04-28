@@ -181,15 +181,28 @@ public class FillinService {
 		Map<Integer, List<String>> map = new HashMap<>(); 
 		for(Fillin fillin :fillinList) {
 			try {
-				List<String> answersList = new ArrayList<>();
-				/* map 中若 questionId 已存在 => 取出其他人的填答 */
-				/* map 中若 questionId 不存在 => 使用新的 answersList */
-				if(map.containsKey(fillin.getQuestionId())) {
-					answersList = map.get(fillin.getQuestionId());
-				}
-				answersList.add(mapper.readValue(fillin.getAnswers(), new TypeReference<>() {
-				}));
+				// 1. 先從 map 拿出現有的清單，如果沒有就建新的 (這是老師教的邏輯簡化版)
+		        List<String> currentAnswersList = map.getOrDefault(fillin.getQuestionId(), new ArrayList<>());
+
+		        // 2. 解析這筆填答內容。注意：一定要指定 List<String>
+		        List<String> thisPersonAnswers = mapper.readValue(fillin.getAnswers(), new TypeReference<List<String>>() {});
+
+		        // 3. 關鍵！用 addAll 把這筆回答的所有選項「併入」統計清單
+		        currentAnswersList.addAll(thisPersonAnswers);
+
+		        // 4. 放回 map
+		        map.put(fillin.getQuestionId(), currentAnswersList);
+				
+//				List<String> answersList = new ArrayList<>();
+//				/* map 中若 questionId 已存在 => 取出其他人的填答 */
+//				/* map 中若 questionId 不存在 => 使用新的 answersList */
+//				if(map.containsKey(fillin.getQuestionId())) {
+//					answersList = map.get(fillin.getQuestionId());
+//				}
+//				answersList.add(mapper.readValue(fillin.getAnswers(), new TypeReference<>() {
+//				}));
 			} catch (Exception e) {
+				System.out.println("這筆答案解析失敗，ID 是: " + fillin.getQuestionId() + " 內容是: " + fillin.getAnswers());
 				return new StatisticsRes(ReplyMessage.ANSWERS_PARSER_ERROR.getCode(), //
 						ReplyMessage.ANSWERS_PARSER_ERROR.getMessage());
 			}
@@ -198,6 +211,8 @@ public class FillinService {
 		for(Integer questionId : map.keySet()) {
 			answersVoList.add(new AnswersVo(questionId, map.get(questionId)));
 		}
-		return new StatisticsRes(ReplyMessage.SUCCESS.getCode(), ReplyMessage.SUCCESS.getMessage(), answersVoList);
+		/* 拿到總填寫人數 */
+		int toto = fillinDao.countDistinctEmailByQuizId(quizId);
+		return new StatisticsRes(ReplyMessage.SUCCESS.getCode(), ReplyMessage.SUCCESS.getMessage(), answersVoList, toto);
 	};
 }

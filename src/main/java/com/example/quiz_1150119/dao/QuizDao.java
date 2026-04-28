@@ -53,7 +53,7 @@ public interface QuizDao extends JpaRepository<Quiz, Integer>{
 	
 	/* 檢查填單時，是否符合可填寫時間和狀態 */
 	@Query(value = "select * from quiz where id = ?1 and star_date <= ?2 and end_date >= ?2"
-			+ " published = 1", nativeQuery = true)
+			+ " and published = 1", nativeQuery = true)
 	public Quiz getPublishedQuizByIdBetween(int id, LocalDate today);
 	
 	/* 已發布且開始之後的問卷 */
