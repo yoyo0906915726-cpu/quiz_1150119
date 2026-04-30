@@ -9,7 +9,7 @@ public class StatisticsRes extends BasicRes {
 
 	private List<AnswersVo> answersVoList;
 	
-	private int  totalCount;
+	private int  totalCount;//填寫人數
 
 	public StatisticsRes() {
 		super();

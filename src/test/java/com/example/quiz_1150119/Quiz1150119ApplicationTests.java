@@ -8,6 +8,7 @@ class Quiz1150119ApplicationTests {
 
 	@Test
 	void contextLoads() {
+		
 	}
 
 }
