@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -27,6 +29,10 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 @Service
 public class QuizService {
+	
+	/* org.slf4j */
+	//日誌
+	private Logger logger = LoggerFactory.getLogger(getClass());
 	
 	/* 物件(類別)、字串轉換工具 */
 	private ObjectMapper mapper = new ObjectMapper();
@@ -71,9 +77,12 @@ public class QuizService {
 			} catch (Exception e) {
 //				return new BasicRes(ReplyMessage.OPTIONS_PARSER_ERROR.getCode(),//
 //						ReplyMessage.OPTIONS_PARSER_ERROR.getMessage());
+				//可以幫我去排查，透過日誌去發現問題
+				logger.error(e.getMessage());
 				throw e;
 			}
 		}
+		logger.info(ReplyMessage.SUCCESS.getMessage());
 		return new BasicRes(ReplyMessage.SUCCESS.getCode(),ReplyMessage.SUCCESS.getMessage());
 	}
 	
@@ -228,4 +237,14 @@ public class QuizService {
 		questionDao.delete(quizIdList);
 		return new GetQuestionListRes(ReplyMessage.SUCCESS.getCode(),ReplyMessage.SUCCESS.getMessage());
 	}
+	
+	//更新填寫狀態
+		public BasicRes updateStatus(int id, boolean published) {
+			//執行更新
+			int rows = quizDao.updatePublishedStatus(id, published);
+			if(rows > 0) {
+				return new BasicRes(ReplyMessage.SUCCESS.getCode(), ReplyMessage.SUCCESS.getMessage());
+			}
+			return new BasicRes(ReplyMessage.Update_failed.getCode(), ReplyMessage.Update_failed.getMessage());
+		}
 }

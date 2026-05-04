@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 
 import com.example.quiz_1150119.entity.Fillin;
 import com.example.quiz_1150119.entity.FillinId;
+import com.example.quiz_1150119.response.BasicRes;
 
 @Repository
 public interface FillinDao extends JpaRepository<Fillin, FillinId>{
@@ -18,4 +19,5 @@ public interface FillinDao extends JpaRepository<Fillin, FillinId>{
 	/* 取得問卷的填寫人數 */
 	@Query(value = "select count(distinct f.email) from fillin f where f.quiz_id = ?", nativeQuery = true)
 	public int countDistinctEmailByQuizId(int quizId);
+
 }

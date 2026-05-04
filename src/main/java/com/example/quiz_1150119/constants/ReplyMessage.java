@@ -23,7 +23,8 @@ public enum ReplyMessage {
 	ONLY_ONE_ANSWERS_ALLOWED(400,"only one answer allowed"),//
 	OPTIONS_ANSWERS_MISMATCH(400,"Options answer mismatch"),//
 	ANSWERS_PARSER_ERROR(400,"Answers parser error"),//
-	QUIZ_UPDATE_NOT_ALLOWED(400,"Quiz update not allowed !");
+	QUIZ_UPDATE_NOT_ALLOWED(400,"Quiz update not allowed !"),//
+	Update_failed(400,"Update failed");
 
 	private int code;
 	

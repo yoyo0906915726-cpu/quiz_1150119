@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.quiz_1150119.request.CreateQuizReq;
 import com.example.quiz_1150119.request.UpdateQuizReq;
+import com.example.quiz_1150119.request.UpdateStatusReq;
 import com.example.quiz_1150119.response.BasicRes;
 import com.example.quiz_1150119.response.GetQuestionListRes;
 import com.example.quiz_1150119.response.GetQuizListRes;
@@ -61,6 +62,12 @@ public class QuizController {
 	@GetMapping("/delete")
 	public BasicRes delete(@RequestParam("quizId") List<Integer> quizIdList) {
 		return quizService.delete(quizIdList);
+	}
+	
+	/* 更改問卷填寫狀態 */
+	@PostMapping("/update_status")
+	public BasicRes updateStatus(@RequestBody UpdateStatusReq req) {
+		return quizService.updateStatus(req.getId(), req.isPublished());
 	}
 	
 	
