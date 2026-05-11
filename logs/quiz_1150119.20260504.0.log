@@ -1,0 +1,167 @@
+09:31:05.633 INFO  [background-preinit]org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+09:31:05.698 INFO  [restartedMain]com.example.quiz_1150119.Quiz1150119Application - Starting Quiz1150119Application using Java 17.0.18 with PID 16240 (C:\Users\yoyo\eclipse-workspace\quiz_1150119\bin\main started by yoyo in C:\Users\yoyo\eclipse-workspace\quiz_1150119)
+09:31:05.700 INFO  [restartedMain]com.example.quiz_1150119.Quiz1150119Application - No active profile set, falling back to 1 default profile: "default"
+09:31:05.753 INFO  [restartedMain]o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+09:31:05.754 INFO  [restartedMain]o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+09:31:06.557 INFO  [restartedMain]o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09:31:06.647 INFO  [restartedMain]o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 77 ms. Found 4 JPA repository interfaces.
+09:31:07.602 INFO  [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+09:31:07.627 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+09:31:07.631 INFO  [restartedMain]org.apache.catalina.core.StandardService - Starting service [Tomcat]
+09:31:07.632 INFO  [restartedMain]org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.53]
+09:31:07.714 INFO  [restartedMain]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+09:31:07.715 INFO  [restartedMain]o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1960 ms
+09:31:07.927 INFO  [restartedMain]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+09:31:08.573 INFO  [restartedMain]com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@c3037e
+09:31:08.575 INFO  [restartedMain]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+09:31:08.621 INFO  [restartedMain]org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+09:31:08.703 INFO  [restartedMain]org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.45.Final
+09:31:08.750 INFO  [restartedMain]o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+09:31:09.116 INFO  [restartedMain]o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+09:31:09.251 INFO  [restartedMain]org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+09:31:10.045 INFO  [restartedMain]o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+09:31:10.048 INFO  [restartedMain]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+09:31:10.378 INFO  [restartedMain]o.s.data.jpa.repository.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+09:31:10.590 WARN  [restartedMain]o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:31:11.013 INFO  [restartedMain]o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+09:31:11.029 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+09:31:11.068 INFO  [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+09:31:11.079 INFO  [restartedMain]com.example.quiz_1150119.Quiz1150119Application - Started Quiz1150119Application in 5.878 seconds (process running for 6.29)
+09:31:42.431 INFO  [http-nio-8080-exec-1]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:31:42.432 INFO  [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+09:31:42.434 INFO  [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+09:58:17.393 INFO  [File Watcher]o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+09:58:17.425 INFO  [Thread-5]o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+09:58:17.430 INFO  [tomcat-shutdown]org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+09:58:17.590 INFO  [tomcat-shutdown]o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+09:58:17.590 INFO  [Thread-5]org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+09:58:17.603 INFO  [Thread-5]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+09:58:17.625 INFO  [Thread-5]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+09:58:17.630 INFO  [Thread-5]com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+09:58:17.811 INFO  [restartedMain]com.example.quiz_1150119.Quiz1150119Application - Starting Quiz1150119Application using Java 17.0.18 with PID 16240 (C:\Users\yoyo\eclipse-workspace\quiz_1150119\bin\main started by yoyo in C:\Users\yoyo\eclipse-workspace\quiz_1150119)
+09:58:17.812 INFO  [restartedMain]com.example.quiz_1150119.Quiz1150119Application - No active profile set, falling back to 1 default profile: "default"
+09:58:18.043 INFO  [restartedMain]o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09:58:18.064 INFO  [restartedMain]o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 4 JPA repository interfaces.
+09:58:18.158 INFO  [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+09:58:18.159 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+09:58:18.159 INFO  [restartedMain]org.apache.catalina.core.StandardService - Starting service [Tomcat]
+09:58:18.159 INFO  [restartedMain]org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.53]
+09:58:18.185 INFO  [restartedMain]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+09:58:18.185 INFO  [restartedMain]o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 371 ms
+09:58:18.212 INFO  [restartedMain]com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+09:58:18.217 INFO  [restartedMain]com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3569f04e
+09:58:18.218 INFO  [restartedMain]com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+09:58:18.219 INFO  [restartedMain]org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+09:58:18.221 INFO  [restartedMain]o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+09:58:18.236 INFO  [restartedMain]o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+09:58:18.238 INFO  [restartedMain]org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+09:58:18.323 INFO  [restartedMain]o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+09:58:18.323 INFO  [restartedMain]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+09:58:18.452 WARN  [restartedMain]o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:58:18.524 INFO  [restartedMain]o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+09:58:18.531 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+09:58:18.537 INFO  [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+09:58:18.542 INFO  [restartedMain]com.example.quiz_1150119.Quiz1150119Application - Started Quiz1150119Application in 0.767 seconds (process running for 1633.752)
+09:58:18.544 INFO  [restartedMain]o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+09:58:56.088 INFO  [http-nio-8080-exec-2]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:58:56.088 INFO  [http-nio-8080-exec-2]org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+09:58:56.090 INFO  [http-nio-8080-exec-2]org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+10:11:49.127 INFO  [http-nio-8080-exec-1]com.example.quiz_1150119.service.QuizService - Success
+10:28:03.473 WARN  [http-nio-8080-exec-6]org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 1062, SQLState: 23000
+10:28:03.478 ERROR [http-nio-8080-exec-6]org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Duplicate entry '9-1' for key 'question.PRIMARY'
+11:08:42.721 INFO  [File Watcher]o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+11:08:42.739 INFO  [Thread-7]o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+11:08:42.742 INFO  [tomcat-shutdown]org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+11:08:42.888 INFO  [tomcat-shutdown]o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+11:08:42.890 INFO  [Thread-7]org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+11:08:42.902 INFO  [Thread-7]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11:08:42.916 INFO  [Thread-7]com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+11:08:42.918 INFO  [Thread-7]com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+11:08:43.137 INFO  [restartedMain]com.example.quiz_1150119.Quiz1150119Application - Starting Quiz1150119Application using Java 17.0.18 with PID 16240 (C:\Users\yoyo\eclipse-workspace\quiz_1150119\bin\main started by yoyo in C:\Users\yoyo\eclipse-workspace\quiz_1150119)
+11:08:43.137 INFO  [restartedMain]com.example.quiz_1150119.Quiz1150119Application - No active profile set, falling back to 1 default profile: "default"
+11:08:43.345 INFO  [restartedMain]o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11:08:43.383 INFO  [restartedMain]o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 4 JPA repository interfaces.
+11:08:43.556 INFO  [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+11:08:43.557 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+11:08:43.558 INFO  [restartedMain]org.apache.catalina.core.StandardService - Starting service [Tomcat]
+11:08:43.558 INFO  [restartedMain]org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.53]
+11:08:43.585 INFO  [restartedMain]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:08:43.585 INFO  [restartedMain]o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 446 ms
+11:08:43.620 INFO  [restartedMain]com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+11:08:43.630 INFO  [restartedMain]com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@241f5d6d
+11:08:43.630 INFO  [restartedMain]com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+11:08:43.632 INFO  [restartedMain]org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11:08:43.638 INFO  [restartedMain]o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+11:08:43.652 INFO  [restartedMain]o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+11:08:43.658 INFO  [restartedMain]org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+11:08:43.751 INFO  [restartedMain]o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+11:08:43.751 INFO  [restartedMain]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11:08:43.869 WARN  [restartedMain]o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11:08:43.950 INFO  [restartedMain]o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:08:43.955 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+11:08:43.959 INFO  [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+11:08:43.965 INFO  [restartedMain]com.example.quiz_1150119.Quiz1150119Application - Started Quiz1150119Application in 0.873 seconds (process running for 5859.175)
+11:08:43.966 INFO  [restartedMain]o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+11:09:03.861 INFO  [File Watcher]o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+11:09:03.862 INFO  [Thread-11]o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+11:09:03.863 INFO  [tomcat-shutdown]org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+11:09:04.006 INFO  [tomcat-shutdown]o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+11:09:04.006 INFO  [Thread-11]org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+11:09:04.008 INFO  [Thread-11]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11:09:04.008 INFO  [Thread-11]com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+11:09:04.010 INFO  [Thread-11]com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+11:09:04.069 INFO  [restartedMain]com.example.quiz_1150119.Quiz1150119Application - Starting Quiz1150119Application using Java 17.0.18 with PID 16240 (C:\Users\yoyo\eclipse-workspace\quiz_1150119\bin\main started by yoyo in C:\Users\yoyo\eclipse-workspace\quiz_1150119)
+11:09:04.069 INFO  [restartedMain]com.example.quiz_1150119.Quiz1150119Application - No active profile set, falling back to 1 default profile: "default"
+11:09:04.178 INFO  [restartedMain]o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11:09:04.195 INFO  [restartedMain]o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 4 JPA repository interfaces.
+11:09:04.243 INFO  [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+11:09:04.244 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+11:09:04.244 INFO  [restartedMain]org.apache.catalina.core.StandardService - Starting service [Tomcat]
+11:09:04.244 INFO  [restartedMain]org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.53]
+11:09:04.261 INFO  [restartedMain]o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:09:04.261 INFO  [restartedMain]o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 190 ms
+11:09:04.278 INFO  [restartedMain]com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+11:09:04.285 INFO  [restartedMain]com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@18303938
+11:09:04.286 INFO  [restartedMain]com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+11:09:04.287 INFO  [restartedMain]org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11:09:04.289 INFO  [restartedMain]o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+11:09:04.296 INFO  [restartedMain]o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+11:09:04.298 INFO  [restartedMain]org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+11:09:04.358 INFO  [restartedMain]o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+11:09:04.359 INFO  [restartedMain]o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11:09:04.438 WARN  [restartedMain]o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11:09:04.478 INFO  [restartedMain]o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:09:04.480 INFO  [restartedMain]org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+11:09:04.484 INFO  [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+11:09:04.486 INFO  [restartedMain]com.example.quiz_1150119.Quiz1150119Application - Started Quiz1150119Application in 0.436 seconds (process running for 5879.697)
+11:09:04.486 INFO  [restartedMain]o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+12:02:51.254 WARN  [HikariPool-4:housekeeper]com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=15m16s208ms755µs800ns).
+12:07:04.660 WARN  [HikariPool-4:housekeeper]com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=4m15s345ms339µs).

@@ -57,12 +57,12 @@ public interface QuizDao extends JpaRepository<Quiz, Integer>{
 	public Quiz getPublishedQuizByIdBetween(int id, LocalDate today);
 	
 	/* 已發布且開始之後的問卷 */
-//	@Query(value = "select * from quiz where id = ?1 and star_date <= ?2 and "
-//			+ " published = 1", nativeQuery = true)
-//	public Quiz getPublishedQuizAfter(int id, LocalDate date);
-	
-	@Query(value = "select * from quiz where id = ?1 and star_date <= ?2 ", nativeQuery = true)
+	@Query(value = "select * from quiz where id = ?1 and star_date <= ?2 and "
+			+ " published = 1", nativeQuery = true)
 	public Quiz getPublishedQuizAfter(int id, LocalDate date);
+	
+//	@Query(value = "select * from quiz where id = ?1 and star_date <= ?2 ", nativeQuery = true)
+//	public Quiz getPublishedQuizAfter(int id, LocalDate date);
 	
 	//更新問卷狀態
 	@Modifying
